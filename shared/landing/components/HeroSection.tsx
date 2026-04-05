@@ -12,7 +12,7 @@ export function HeroSection({ hero, gumroadUrl }: HeroSectionProps) {
   return (
     <section className="section-shell relative pb-20 pt-32 md:pb-24 md:pt-44">
       <div className="mx-auto max-w-4xl text-center">
-        <h1 className="text-primary mx-auto max-w-3xl pb-1 text-5xl font-extrabold leading-[1.1] tracking-tight md:text-7xl md:leading-[1.08]">
+        <h1 className="text-primary mx-auto max-w-3xl pb-2 text-5xl font-extrabold leading-[1.14] tracking-tight md:text-7xl md:leading-[1.12]">
           {lines[0]}
           {lines[1] ? (
             <span className="accent-gradient-text mt-2 block bg-clip-text text-transparent">
