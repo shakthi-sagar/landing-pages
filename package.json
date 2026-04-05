@@ -1,0 +1,19 @@
+{
+  "name": "landing-pages",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:quickpeek": "npm run dev --workspace quickpeek",
+    "dev:swiftgpt": "npm run dev --workspace swiftgpt",
+    "dev:lockin": "npm run dev --workspace lockin",
+    "dev:toolbento": "npm run dev --workspace toolbento",
+    "build:quickpeek": "npm run build --workspace quickpeek",
+    "build:swiftgpt": "npm run build --workspace swiftgpt",
+    "build:lockin": "npm run build --workspace lockin",
+    "build:toolbento": "npm run build --workspace toolbento",
+    "build:all": "npm run build:quickpeek && npm run build:swiftgpt && npm run build:lockin && npm run build:toolbento"
+  }
+}
