@@ -32,10 +32,10 @@ body,
 }
 
 html[data-theme="dark"] {
-  --bg: #0b1328;
-  --fg: #edf3ff;
-  --muted: #9db0ce;
-  --secondary: #d0ddef;
+  --bg: #241208;
+  --fg: #fff4e8;
+  --muted: #d7b293;
+  --secondary: #f0d7c2;
   --border-soft: rgba(191, 126, 75, 0.26);
   --brand: #ffb26b;
   --brand-strong: #ffc792;
@@ -45,11 +45,11 @@ html[data-theme="dark"] {
   --page-bg-top: #1a0d05;
   --page-bg-bottom: #241208;
   --grid-line: rgba(255, 178, 107, 0.17);
-  --top-glow: linear-gradient(to bottom, rgba(12, 22, 45, 0.72), transparent);
-  --card-bg: rgba(15, 25, 48, 0.82);
-  --card-shadow: 0 24px 64px -34px rgba(2, 8, 24, 0.88);
-  --footer-bg: rgba(6, 11, 26, 0.7);
-  --footer-border: rgba(64, 84, 122, 0.55);
+  --top-glow: linear-gradient(to bottom, rgba(45, 23, 10, 0.72), transparent);
+  --card-bg: rgba(48, 24, 12, 0.82);
+  --card-shadow: 0 24px 64px -34px rgba(17, 8, 3, 0.88);
+  --footer-bg: rgba(30, 15, 7, 0.72);
+  --footer-border: rgba(161, 107, 68, 0.52);
   --cta-bg: #c96a1a;
   --cta-hover: #e07a1f;
 }
@@ -214,11 +214,19 @@ html[data-theme="dark"] .theme-brand-icon {
 }
 
 .pricing-surface {
-  background: linear-gradient(160deg, #0e1a3e 0%, #11234f 60%, #173061 100%);
+  background: linear-gradient(160deg, #5e2d0e 0%, #8a4516 60%, #b85f10 100%);
+}
+
+.pricing-glow-a {
+  background: color-mix(in srgb, var(--brand) 36%, transparent);
+}
+
+.pricing-glow-b {
+  background: color-mix(in srgb, var(--brand-strong) 30%, transparent);
 }
 
 html[data-theme="dark"] .pricing-surface {
-  background: linear-gradient(160deg, #0d1737 0%, #12234f 60%, #1a3568 100%);
+  background: linear-gradient(160deg, #3f1d08 0%, #5c2c0c 60%, #7a3c13 100%);
 }
 
 .text-muted {
@@ -250,7 +258,7 @@ html[data-theme="dark"] .bg-white:not(.keep-light),
 html[data-theme="dark"] .bg-white\/80:not(.keep-light),
 html[data-theme="dark"] .bg-white\/85:not(.keep-light),
 html[data-theme="dark"] .bg-white\/55:not(.keep-light) {
-  background: rgba(15, 23, 42, 0.82) !important;
+  background: rgba(45, 23, 10, 0.84) !important;
 }
 
 .keep-light {
@@ -258,18 +266,18 @@ html[data-theme="dark"] .bg-white\/55:not(.keep-light) {
 }
 
 html[data-theme="dark"] .bg-slate-50\/90 {
-  background: rgba(15, 23, 42, 0.62) !important;
+  background: rgba(45, 23, 10, 0.66) !important;
 }
 
 html[data-theme="dark"] .bg-blue-50,
 html[data-theme="dark"] .bg-blue-100 {
-  background: rgba(57, 95, 172, 0.24) !important;
+  background: rgba(201, 106, 26, 0.24) !important;
 }
 
 html[data-theme="dark"] .border-slate-200,
 html[data-theme="dark"] .border-slate-200\/70,
 html[data-theme="dark"] .border-slate-200\/80 {
-  border-color: rgba(148, 163, 184, 0.25) !important;
+  border-color: rgba(210, 145, 98, 0.28) !important;
 }
 
 .animate-drift {

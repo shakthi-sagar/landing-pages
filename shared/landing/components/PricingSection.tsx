@@ -12,8 +12,8 @@ export function PricingSection({ section, gumroadUrl }: PricingSectionProps) {
   return (
     <section id={section.id} className="section-shell">
       <div className="pricing-surface relative overflow-hidden rounded-[2rem] px-6 py-12 text-center shadow-2xl shadow-slate-900/35 md:px-10 md:py-16">
-        <div className="absolute -left-16 top-4 h-56 w-56 rounded-full bg-blue-500/20 blur-3xl" />
-        <div className="absolute -right-14 bottom-0 h-56 w-56 rounded-full bg-blue-400/18 blur-3xl" />
+        <div className="pricing-glow-a absolute -left-16 top-4 h-56 w-56 rounded-full blur-3xl" />
+        <div className="pricing-glow-b absolute -right-14 bottom-0 h-56 w-56 rounded-full blur-3xl" />
 
         <div className="relative z-10">
           <span className="chip-accent inline-flex items-center rounded-full px-4 py-1.5 text-sm font-bold uppercase tracking-widest">{section.eyebrow}</span>

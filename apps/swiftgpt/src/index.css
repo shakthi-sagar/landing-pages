@@ -32,10 +32,10 @@ body,
 }
 
 html[data-theme="dark"] {
-  --bg: #0b1328;
+  --bg: #101337;
   --fg: #edf3ff;
-  --muted: #9db0ce;
-  --secondary: #d0ddef;
+  --muted: #aeb6e8;
+  --secondary: #d9ddff;
   --border-soft: rgba(124, 133, 223, 0.26);
   --brand: #9ba7ff;
   --brand-strong: #bcc4ff;
@@ -45,11 +45,11 @@ html[data-theme="dark"] {
   --page-bg-top: #090c20;
   --page-bg-bottom: #0f1230;
   --grid-line: rgba(155, 167, 255, 0.17);
-  --top-glow: linear-gradient(to bottom, rgba(12, 22, 45, 0.72), transparent);
-  --card-bg: rgba(15, 25, 48, 0.82);
-  --card-shadow: 0 24px 64px -34px rgba(2, 8, 24, 0.88);
-  --footer-bg: rgba(6, 11, 26, 0.7);
-  --footer-border: rgba(64, 84, 122, 0.55);
+  --top-glow: linear-gradient(to bottom, rgba(17, 19, 52, 0.72), transparent);
+  --card-bg: rgba(18, 20, 60, 0.82);
+  --card-shadow: 0 24px 64px -34px rgba(4, 6, 26, 0.88);
+  --footer-bg: rgba(11, 12, 40, 0.72);
+  --footer-border: rgba(96, 103, 170, 0.52);
   --cta-bg: #4d5bd4;
   --cta-hover: #6674f0;
 }
@@ -214,11 +214,19 @@ html[data-theme="dark"] .theme-brand-icon {
 }
 
 .pricing-surface {
-  background: linear-gradient(160deg, #0e1a3e 0%, #11234f 60%, #173061 100%);
+  background: linear-gradient(160deg, #272f8f 0%, #3743b2 60%, #4956d8 100%);
+}
+
+.pricing-glow-a {
+  background: color-mix(in srgb, var(--brand) 34%, transparent);
+}
+
+.pricing-glow-b {
+  background: color-mix(in srgb, var(--brand-strong) 28%, transparent);
 }
 
 html[data-theme="dark"] .pricing-surface {
-  background: linear-gradient(160deg, #0d1737 0%, #12234f 60%, #1a3568 100%);
+  background: linear-gradient(160deg, #1b235f 0%, #253077 60%, #334292 100%);
 }
 
 .text-muted {
@@ -250,7 +258,7 @@ html[data-theme="dark"] .bg-white:not(.keep-light),
 html[data-theme="dark"] .bg-white\/80:not(.keep-light),
 html[data-theme="dark"] .bg-white\/85:not(.keep-light),
 html[data-theme="dark"] .bg-white\/55:not(.keep-light) {
-  background: rgba(15, 23, 42, 0.82) !important;
+  background: rgba(17, 19, 52, 0.84) !important;
 }
 
 .keep-light {
@@ -258,18 +266,18 @@ html[data-theme="dark"] .bg-white\/55:not(.keep-light) {
 }
 
 html[data-theme="dark"] .bg-slate-50\/90 {
-  background: rgba(15, 23, 42, 0.62) !important;
+  background: rgba(17, 19, 52, 0.66) !important;
 }
 
 html[data-theme="dark"] .bg-blue-50,
 html[data-theme="dark"] .bg-blue-100 {
-  background: rgba(57, 95, 172, 0.24) !important;
+  background: rgba(98, 116, 240, 0.24) !important;
 }
 
 html[data-theme="dark"] .border-slate-200,
 html[data-theme="dark"] .border-slate-200\/70,
 html[data-theme="dark"] .border-slate-200\/80 {
-  border-color: rgba(148, 163, 184, 0.25) !important;
+  border-color: rgba(138, 150, 248, 0.28) !important;
 }
 
 .animate-drift {
