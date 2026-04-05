@@ -35,10 +35,12 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        run: npm install --workspaces --include-workspace-root
+        run: |
+          npm install --prefix apps/${{ matrix.app }}
+          ln -sfn "apps/${{ matrix.app }}/node_modules" node_modules
 
       - name: Build app
-        run: npm run build --workspace ${{ matrix.app }}
+        run: npm run build --prefix apps/${{ matrix.app }}
 
       - name: Deploy to Cloudflare Pages
         env:
