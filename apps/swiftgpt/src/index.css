@@ -13,22 +13,22 @@ body,
   --fg: #101a31;
   --muted: #5e6a84;
   --secondary: #3a4863;
-  --border-soft: rgba(31, 44, 76, 0.14);
-  --brand: #2f63e6;
-  --brand-strong: #244ab4;
-  --brand-soft: #d7e4ff;
-  --page-grad-a: #d8e6ff;
-  --page-grad-b: #c7d8f5;
-  --page-bg-top: #f8faff;
-  --page-bg-bottom: #e8effb;
-  --grid-line: rgba(46, 88, 190, 0.06);
+  --border-soft: rgba(53, 61, 130, 0.14);
+  --brand: #5b6cf9;
+  --brand-strong: #4a57d3;
+  --brand-soft: #dfe3ff;
+  --page-grad-a: #e2e5ff;
+  --page-grad-b: #cfd5ff;
+  --page-bg-top: #f9faff;
+  --page-bg-bottom: #ecefff;
+  --grid-line: rgba(91, 108, 249, 0.08);
   --top-glow: linear-gradient(to bottom, rgba(255, 255, 255, 0.72), transparent);
   --card-bg: rgba(255, 255, 255, 0.84);
   --card-shadow: 0 24px 64px -36px rgba(17, 31, 58, 0.38);
   --footer-bg: rgba(255, 255, 255, 0.58);
   --footer-border: rgba(210, 222, 244, 0.95);
-  --cta-bg: #162b57;
-  --cta-hover: #244ab4;
+  --cta-bg: #2e368f;
+  --cta-hover: #3f49b4;
 }
 
 html[data-theme="dark"] {
@@ -36,22 +36,22 @@ html[data-theme="dark"] {
   --fg: #edf3ff;
   --muted: #9db0ce;
   --secondary: #d0ddef;
-  --border-soft: rgba(130, 154, 197, 0.26);
-  --brand: #7ca9ff;
-  --brand-strong: #9abfff;
-  --brand-soft: rgba(124, 169, 255, 0.18);
-  --page-grad-a: #16264a;
-  --page-grad-b: #121f3f;
-  --page-bg-top: #060b1a;
-  --page-bg-bottom: #0b1328;
-  --grid-line: rgba(127, 153, 201, 0.12);
+  --border-soft: rgba(124, 133, 223, 0.26);
+  --brand: #9ba7ff;
+  --brand-strong: #bcc4ff;
+  --brand-soft: rgba(155, 167, 255, 0.22);
+  --page-grad-a: #1a1f52;
+  --page-grad-b: #161948;
+  --page-bg-top: #090c20;
+  --page-bg-bottom: #0f1230;
+  --grid-line: rgba(155, 167, 255, 0.17);
   --top-glow: linear-gradient(to bottom, rgba(12, 22, 45, 0.72), transparent);
   --card-bg: rgba(15, 25, 48, 0.82);
   --card-shadow: 0 24px 64px -34px rgba(2, 8, 24, 0.88);
   --footer-bg: rgba(6, 11, 26, 0.7);
   --footer-border: rgba(64, 84, 122, 0.55);
-  --cta-bg: #2a58cb;
-  --cta-hover: #3b6df0;
+  --cta-bg: #4d5bd4;
+  --cta-hover: #6674f0;
 }
 
 html {
