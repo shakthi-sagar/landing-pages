@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="SwiftGPT icon">
+  <defs>
+    <linearGradient id="swiftGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="112" height="112" rx="28" fill="url(#swiftGrad)"/>
+  <path d="M66 28c-12 4-20 14-20 26 0 9 4 16 11 22-6 0-11 5-11 11h46c0-6-5-11-11-11 7-6 11-13 11-22 0-12-8-22-20-26z" fill="#dbeafe"/>
+  <path d="M53 62h22" stroke="#1e3a8a" stroke-width="6" stroke-linecap="round"/>
+</svg>
