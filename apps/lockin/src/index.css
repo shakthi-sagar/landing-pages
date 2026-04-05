@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@source "./**/*.{ts,tsx}";
+@source "../../../shared/landing/**/*.{ts,tsx}";
 
 html,
 body,
