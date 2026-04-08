@@ -3,7 +3,7 @@ import type { LandingPageContent } from "../../../../shared/landing/types";
 export const swiftGPTContent: LandingPageContent = {
   brand: "SwiftGPT",
   brandIcon: "/swiftgpt-icon.svg",
-  gumroadUrl: "https://shakthisagar.gumroad.com",
+  gumroadUrl: "https://shakthisagar.gumroad.com/l/swiftgpt",
 
   navLinks: [
     { label: "Demo", href: "#demo" },
