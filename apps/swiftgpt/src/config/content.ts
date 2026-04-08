@@ -1,6 +1,6 @@
 import type { LandingPageContent } from "../../../../shared/landing/types";
 
-export const quickPeekContent: LandingPageContent = {
+export const swiftGPTContent: LandingPageContent = {
   brand: "SwiftGPT",
   brandIcon: "/swiftgpt-icon.svg",
   gumroadUrl: "https://shakthisagar.gumroad.com",
@@ -15,8 +15,8 @@ export const quickPeekContent: LandingPageContent = {
     badge: "Built for macOS",
     headline: "Your AI tabs in one panel,\none shortcut away.",
     subheadline:
-      "SwiftGPT opens ChatGPT, Gemini, Claude, and your custom AI sites in a focused menu bar panel so you can prompt, switch, and continue work without browser clutter.",
-    ctaText: "Get SwiftGPT for $12",
+      "SwiftGPT is an AI-first setup of the same fast menu bar panel: open ChatGPT, Gemini, Claude, and your custom AI sites without browser clutter.",
+    ctaText: "Get SwiftGPT for $5",
     priceNote: "One-time purchase. Lifetime updates.",
     previewCards: [
       { title: "ChatGPT", subtitle: "Default tab, always ready" },
@@ -90,9 +90,9 @@ export const quickPeekContent: LandingPageContent = {
     id: "pricing",
     eyebrow: "Simple pricing",
     headline: "A focused AI copilot for your menu bar.",
-    price: "$12",
+    price: "$5",
     currency: "USD",
-    subtitle: "Pay once. Ship faster. Keep lifetime updates.",
+    subtitle: "Pay once. Prompt faster. Lifetime updates included.",
     ctaText: "Get SwiftGPT Now",
     features: [
       "Default + custom AI site tabs",

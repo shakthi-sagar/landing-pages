@@ -1,8 +1,8 @@
 import { LandingPageApp } from "../../../shared/landing/AppShell";
-import { quickPeekContent } from "./config/content";
+import { toolBentoContent } from "./config/content";
 
 function App() {
-  return <LandingPageApp content={quickPeekContent} themeStorageKey="toolbento-theme-mode" />;
+  return <LandingPageApp content={toolBentoContent} themeStorageKey="toolbento-theme-mode" />;
 }
 
 export default App;

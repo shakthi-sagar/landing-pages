@@ -1,6 +1,6 @@
 import type { LandingPageContent } from "../../../../shared/landing/types";
 
-export const quickPeekContent: LandingPageContent = {
+export const lockInContent: LandingPageContent = {
   brand: "LockIn",
   brandIcon: "/lockin-icon.svg",
   gumroadUrl: "https://shakthisagar.gumroad.com",
@@ -12,12 +12,12 @@ export const quickPeekContent: LandingPageContent = {
     { label: "FAQ", href: "#faq" },
   ],
   hero: {
-    badge: "Built for macOS",
+    badge: "Coming Soon",
     headline: "Stay in one app,\nor your session breaks.",
     subheadline:
       "LockIn tracks your frontmost app during a focus block. If you leave your chosen app, a blocker appears until you return or type your fail phrase.",
-    ctaText: "Get LockIn for $10",
-    priceNote: "One-time purchase. Lifetime updates.",
+    ctaText: "Coming Soon",
+    priceNote: "Launch details and pricing will be announced soon.",
     previewCards: [
       { title: "Focus Session", subtitle: "25-minute locked sprint" },
       { title: "Off-Track Blocker", subtitle: "Full-screen recovery overlay" },
@@ -88,12 +88,12 @@ export const quickPeekContent: LandingPageContent = {
   },
   pricing: {
     id: "pricing",
-    eyebrow: "Simple pricing",
-    headline: "Train focus with real friction.",
-    price: "$10",
-    currency: "USD",
-    subtitle: "Pay once. Use daily. Keep lifetime updates.",
-    ctaText: "Get LockIn Now",
+    eyebrow: "Launch status",
+    headline: "LockIn is coming soon.",
+    price: "Coming Soon",
+    currency: "",
+    subtitle: "Join the waitlist to get notified when LockIn goes live.",
+    ctaText: "Coming Soon",
     features: [
       "Target-app focus enforcement",
       "Fail-phrase guarded exit flow",

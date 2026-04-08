@@ -1,6 +1,6 @@
 import type { LandingPageContent } from "../../../../shared/landing/types";
 
-export const quickPeekContent: LandingPageContent = {
+export const toolBentoContent: LandingPageContent = {
   brand: "ToolBento",
   brandIcon: "/toolbento-icon.svg",
   gumroadUrl: "https://shakthisagar.gumroad.com",
@@ -12,12 +12,12 @@ export const quickPeekContent: LandingPageContent = {
     { label: "FAQ", href: "#faq" },
   ],
   hero: {
-    badge: "Built for macOS",
+    badge: "Coming Soon",
     headline: "Twelve daily utility tools,\nin one native workspace.",
     subheadline:
       "ToolBento bundles JSON, URL, Base64, regex, hashes, JWT, timestamps, image and PDF conversions, and more into one fast app you can customize.",
-    ctaText: "Get ToolBento for $19",
-    priceNote: "One-time purchase. Lifetime updates.",
+    ctaText: "Coming Soon",
+    priceNote: "Launch details and pricing will be announced soon.",
     previewCards: [
       { title: "Data Utilities", subtitle: "JSON, Base64, Hash, JWT" },
       { title: "Text + URL", subtitle: "Escape, URL toolkit, Regex lab" },
@@ -88,12 +88,12 @@ export const quickPeekContent: LandingPageContent = {
   },
   pricing: {
     id: "pricing",
-    eyebrow: "Simple pricing",
-    headline: "A utility toolbox you will actually use daily.",
-    price: "$19",
-    currency: "USD",
-    subtitle: "Pay once. Keep shipping faster. Lifetime updates included.",
-    ctaText: "Get ToolBento Now",
+    eyebrow: "Launch status",
+    headline: "ToolBento is coming soon.",
+    price: "Coming Soon",
+    currency: "",
+    subtitle: "Join the waitlist to get notified when ToolBento goes live.",
+    ctaText: "Coming Soon",
     features: [
       "12 native utility workspaces",
       "Customizable home tool list",

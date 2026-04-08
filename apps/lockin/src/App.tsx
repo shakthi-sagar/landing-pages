@@ -1,8 +1,8 @@
 import { LandingPageApp } from "../../../shared/landing/AppShell";
-import { quickPeekContent } from "./config/content";
+import { lockInContent } from "./config/content";
 
 function App() {
-  return <LandingPageApp content={quickPeekContent} themeStorageKey="lockin-theme-mode" />;
+  return <LandingPageApp content={lockInContent} themeStorageKey="lockin-theme-mode" />;
 }
 
 export default App;

@@ -7,7 +7,8 @@ type PricingSectionProps = {
 };
 
 export function PricingSection({ section, gumroadUrl }: PricingSectionProps) {
-  const numericPrice = section.price.replace(/[^0-9]/g, "") || "10";
+  const numericPrice = section.price.replace(/[^0-9]/g, "");
+  const hasNumericPrice = numericPrice.length > 0;
 
   return (
     <section id={section.id} className="section-shell">
@@ -19,11 +20,17 @@ export function PricingSection({ section, gumroadUrl }: PricingSectionProps) {
           <span className="chip-accent inline-flex items-center rounded-full px-4 py-1.5 text-sm font-bold uppercase tracking-widest">{section.eyebrow}</span>
           <h2 className="mx-auto mt-5 max-w-2xl text-4xl font-extrabold tracking-tight text-white md:text-5xl">{section.headline}</h2>
 
-          <div className="mt-8 flex items-end justify-center gap-1">
-            <span className="text-3xl font-bold text-slate-300">$</span>
-            <span className="text-7xl font-black tracking-tight text-white md:text-8xl">{numericPrice}</span>
-            <span className="mb-3 ml-2 text-xs font-semibold text-slate-400">{section.currency}</span>
-          </div>
+          {hasNumericPrice ? (
+            <div className="mt-8 flex items-end justify-center gap-1">
+              <span className="text-3xl font-bold text-slate-300">$</span>
+              <span className="text-7xl font-black tracking-tight text-white md:text-8xl">{numericPrice}</span>
+              <span className="mb-3 ml-2 text-xs font-semibold text-slate-400">{section.currency}</span>
+            </div>
+          ) : (
+            <div className="mt-8">
+              <span className="text-5xl font-black tracking-tight text-white md:text-6xl">{section.price}</span>
+            </div>
+          )}
           <p className="mt-2 text-base font-medium text-slate-300 md:text-lg">{section.subtitle}</p>
 
           <a
@@ -47,7 +54,9 @@ export function PricingSection({ section, gumroadUrl }: PricingSectionProps) {
             ))}
           </div>
 
-          <p className="mt-8 text-xs font-medium text-slate-500">Secured checkout via Gumroad</p>
+          <p className="mt-8 text-xs font-medium text-slate-500">
+            {hasNumericPrice ? "Secured checkout via Gumroad" : "Public launch details will be announced soon"}
+          </p>
         </div>
       </div>
     </section>

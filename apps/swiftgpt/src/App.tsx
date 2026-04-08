@@ -1,8 +1,8 @@
 import { LandingPageApp } from "../../../shared/landing/AppShell";
-import { quickPeekContent } from "./config/content";
+import { swiftGPTContent } from "./config/content";
 
 function App() {
-  return <LandingPageApp content={quickPeekContent} themeStorageKey="swiftgpt-theme-mode" />;
+  return <LandingPageApp content={swiftGPTContent} themeStorageKey="swiftgpt-theme-mode" />;
 }
 
 export default App;

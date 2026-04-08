@@ -16,7 +16,7 @@ export const quickPeekContent: LandingPageContent = {
     headline: "Open your key sites instantly,\nwithout switching windows.",
     subheadline:
       "QuickPeek gives you one-click access from the menu bar so you can check dashboards, docs, and inboxes without opening a browser or breaking flow.",
-    ctaText: "Get QuickPeek for $10",
+    ctaText: "Get QuickPeek for $5",
     priceNote: "One-time purchase. Lifetime updates.",
     previewCards: [
       { title: "Team Inbox", subtitle: "support.yourcompany.com" },
@@ -91,9 +91,9 @@ export const quickPeekContent: LandingPageContent = {
     id: "pricing",
     eyebrow: "Simple pricing",
     headline: "A simple productivity upgrade.",
-    price: "$10",
+    price: "$5",
     currency: "USD",
-    subtitle: "Pay once. Use it daily. Keep lifetime updates.",
+    subtitle: "Pay once. Use it daily. Lifetime updates included.",
     ctaText: "Get QuickPeek Now",
     features: [
       "Unlimited saved site shortcuts",
