@@ -57,7 +57,7 @@ export function DemoSection({ section }: DemoSectionProps) {
       </div>
 
       <motion.div
-        className="relative mx-auto max-w-6xl"
+        className="relative mx-auto w-fit max-w-full"
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.25 }}
@@ -65,7 +65,7 @@ export function DemoSection({ section }: DemoSectionProps) {
       >
         <video
           ref={videoRef}
-          className="block aspect-video w-full rounded-3xl border border-slate-200 bg-slate-950 object-cover shadow-2xl shadow-slate-900/24"
+          className="block h-auto w-auto max-w-full rounded-3xl border border-slate-200 bg-slate-950 object-contain shadow-2xl shadow-slate-900/24"
           preload="metadata"
           poster={section.placeholderImage}
           playsInline

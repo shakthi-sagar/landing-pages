@@ -6,18 +6,21 @@ type HeaderProps = {
   brandIcon: string;
   navLinks: NavLink[];
   gumroadUrl: string;
+  ctaText: string;
   theme: "light" | "dark";
   onToggleTheme: () => void;
 };
 
-export function Header({ brand, brandIcon, navLinks, gumroadUrl, theme, onToggleTheme }: HeaderProps) {
+export function Header({ brand, brandIcon, navLinks, gumroadUrl, ctaText, theme, onToggleTheme }: HeaderProps) {
+  const isComingSoon = ctaText.toLowerCase().includes("coming soon");
+
   return (
     <header className="fixed inset-x-0 top-4 z-[100] px-4 md:top-6 md:px-6">
-      <nav className="theme-header-nav section-shell glass-card flex h-16 items-center justify-between px-4 md:h-[72px] md:px-6">
-        <div className="flex items-center gap-8">
-          <a href="#" className="flex items-center gap-2.5 transition-transform hover:scale-[1.02]">
-            <img src={brandIcon} alt={`${brand} icon`} className="theme-brand-icon h-9 w-9 rounded-xl" />
-            <span className="text-primary text-xl font-extrabold tracking-tight">{brand}</span>
+      <nav className="theme-header-nav section-shell glass-card flex h-16 items-center justify-between px-3 sm:px-4 md:h-[72px] md:px-6">
+        <div className="flex min-w-0 items-center gap-3 md:gap-8">
+          <a href="#" className="flex min-w-0 items-center gap-2 transition-transform hover:scale-[1.02] md:gap-2.5">
+            <img src={brandIcon} alt={`${brand} icon`} className="theme-brand-icon h-8 w-8 rounded-xl md:h-9 md:w-9" />
+            <span className="text-primary truncate text-lg font-extrabold tracking-tight sm:text-xl">{brand}</span>
           </a>
           <div className="hidden gap-6 lg:flex">
             {navLinks.map((item) => (
@@ -32,12 +35,12 @@ export function Header({ brand, brandIcon, navLinks, gumroadUrl, theme, onToggle
             ))}
           </div>
         </div>
-        <div className="flex items-center gap-2 md:gap-3">
+        <div className="flex shrink-0 items-center gap-2 md:gap-3">
           <button
             type="button"
             onClick={onToggleTheme}
             aria-label={theme === "light" ? "Switch to dark mode" : "Switch to light mode"}
-            className="theme-icon-button inline-flex h-10 w-10 items-center justify-center rounded-xl border transition-colors"
+            className="theme-icon-button inline-flex h-9 w-9 items-center justify-center rounded-xl border transition-colors md:h-10 md:w-10"
           >
             {theme === "light" ? (
               <Moon className="h-4 w-4" strokeWidth={2.2} aria-hidden />
@@ -46,15 +49,21 @@ export function Header({ brand, brandIcon, navLinks, gumroadUrl, theme, onToggle
             )}
           </button>
 
-          <a
-            href={gumroadUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="btn-primary inline-flex items-center gap-2 rounded-xl px-4 py-2.5 text-sm font-bold transition-all active:scale-95 md:px-6"
-          >
-            {`Get ${brand}`}
-            <ArrowRight className="h-4 w-4" strokeWidth={2.4} />
-          </a>
+          {isComingSoon ? (
+            <span className="btn-primary hidden cursor-not-allowed items-center gap-2 rounded-xl px-4 py-2.5 text-sm font-bold opacity-70 sm:inline-flex md:px-6">
+              {ctaText}
+            </span>
+          ) : (
+            <a
+              href={gumroadUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="btn-primary hidden items-center gap-2 rounded-xl px-4 py-2.5 text-sm font-bold transition-all active:scale-95 sm:inline-flex md:px-6"
+            >
+              {ctaText}
+              <ArrowRight className="h-4 w-4" strokeWidth={2.4} />
+            </a>
+          )}
         </div>
       </nav>
     </header>

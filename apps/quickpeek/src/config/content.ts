@@ -4,129 +4,170 @@ export const quickPeekContent: LandingPageContent = {
   brand: "QuickPeek",
   brandIcon: "/quickpeek-icon.svg",
   gumroadUrl: "https://shakthisagar.gumroad.com/l/quickpeek",
+
   navLinks: [
     { label: "Demo", href: "#demo" },
-    { label: "Features", href: "#features" },
-    { label: "How it works", href: "#how-it-works" },
+    { label: "Why", href: "#features" },
+    { label: "Setup", href: "#how-it-works" },
     { label: "Pricing", href: "#pricing" },
     { label: "FAQ", href: "#faq" },
   ],
+
   hero: {
-    badge: "Built for macOS",
-    headline: "Open your key sites instantly,\nwithout switching windows.",
+    badge: "macOS only • built for dev workflows",
+
+    headline:
+      "Stop opening a full browser\njust to check one thing.",
+
     subheadline:
-      "QuickPeek gives you one-click access from the menu bar so you can check dashboards, docs, and inboxes without opening a browser or breaking flow.",
-    ctaText: "Get QuickPeek for $5",
-    priceNote: "One-time purchase. Lifetime updates.",
+      "QuickPeek turns your menu bar into a command center for the sites you live in — dashboards, docs, inboxes. Open, check, close. No tabs. No context loss.",
+
+    ctaText: "Buy for $5",
+    priceNote: "One-time. No BS subscriptions.",
+
     previewCards: [
-      { title: "Team Inbox", subtitle: "support.yourcompany.com" },
-      { title: "Product Dashboard", subtitle: "analytics.yourcompany.com" },
-      { title: "Docs & Notes", subtitle: "notion.so/workspace" },
+      { title: "Support Inbox", subtitle: "Check → close" },
+      { title: "Analytics", subtitle: "Quick glance" },
+      { title: "Docs", subtitle: "Jump → copy → back" },
     ],
   },
+
   demo: {
     id: "demo",
-    eyebrow: "Productivity, not tab juggling",
-    headline: "No browser window switching. Just quick access.",
+    eyebrow: "Your browser is overkill",
+
+    headline:
+      "You don’t need 20 tabs\nfor 2-second checks.",
+
     description:
-      "QuickPeek runs as a native menu bar panel with per-site shortcuts, zoom controls, and instant context switching for the sites you check most.",
+      "Opening Chrome → finding the tab → getting distracted → forgetting why you opened it. QuickPeek cuts that loop. One shortcut. One panel. Done.",
+
     videoUrl: "/demo.mp4",
-    placeholderImage: "/screenshot.png",
   },
+
   comparison: {
     id: "features",
-    eyebrow: "Why it matters",
-    headline: "Every context switch costs focus.",
+    eyebrow: "The real problem",
+
+    headline:
+      "Every browser check breaks your flow.",
+
     before: {
-      title: "Without QuickPeek",
-      body: "Open a browser just to check one thing, jump across tabs and windows, get distracted and lose momentum.",
+      title: "Browser flow",
+      body:
+        "Cmd+Tab → Chrome → find tab → open → see notifications → 5 minutes gone.",
     },
+
     after: {
-      title: "With QuickPeek",
-      body: "Open exactly one site from the menu bar, jump by keyboard shortcuts, adjust zoom quickly, return to your main task with focus intact.",
+      title: "QuickPeek flow",
+      body:
+        "Shortcut → panel opens → check → close. Back to work in seconds.",
     },
   },
+
   howItWorks: {
     id: "how-it-works",
-    eyebrow: "How it works",
-    headline: "Set up in under a minute.",
+    eyebrow: "Setup",
+
+    headline: "Takes less than a minute.",
+
     steps: [
       {
-        title: "1. Install",
-        body: "Download QuickPeek and move it to your Applications folder.",
+        title: "Install",
+        body: "Download and drop into Applications. That’s it.",
       },
       {
-        title: "2. Add your sites",
-        body: "Save the sites you check most often, pick icons, and reorder them for faster access.",
+        title: "Add your tools",
+        body: "Paste links to dashboards, docs, inboxes. Reorder however you think.",
       },
       {
-        title: "3. Launch instantly",
-        body: "Open from your menu bar or hotkey, check quickly, and stay in your workflow.",
+        title: "Use like muscle memory",
+        body: "Hit a shortcut, jump instantly, get out. No browsing.",
       },
     ],
   },
+
   engineering: {
-    eyebrow: "Built the right way",
-    headline: "Built for fast, uninterrupted work.",
+    eyebrow: "Why it feels fast",
+
+    headline: "Built like a tool, not a browser.",
+
     cards: [
       {
-        title: "Native performance",
-        description: "Swift-based macOS panel tuned for instant launch and low resource usage.",
+        title: "Instant open",
+        description:
+          "Menu bar panel launches in milliseconds. No heavy browser startup.",
       },
       {
-        title: "Per-site zoom memory",
-        description: "Zoom settings persist per site so readability stays exactly how you like it.",
+        title: "State preserved",
+        description:
+          "Everything stays exactly where you left it. No reloads, no lost context.",
       },
       {
-        title: "Global shortcuts",
-        description: "Cmd + 1..9 for site switching plus keyboard zoom controls while the panel is open.",
+        title: "Keyboard-first",
+        description:
+          "Global shortcut + Cmd+1..9 switching. Jump between sites without touching the mouse.",
       },
       {
-        title: "Auto updates",
-        description: "Sparkle-powered signed updates keep improvements and fixes coming automatically.",
+        title: "Lightweight by design",
+        description:
+          "Runs as a minimal native panel, not a full browser. Low memory, no tab bloat.",
       },
     ],
   },
+
   pricing: {
     id: "pricing",
-    eyebrow: "Simple pricing",
-    headline: "A simple productivity upgrade.",
+    eyebrow: "Pricing",
+
+    headline: "Pay once. Use it every day.",
+
     price: "$5",
     currency: "USD",
-    subtitle: "Pay once. Use it daily. Lifetime updates included.",
-    ctaText: "Get QuickPeek Now",
+
+    subtitle:
+      "If it saves you even 2 minutes a day, it pays for itself in a week.",
+
+    ctaText: "Get QuickPeek",
+
     features: [
-      "Unlimited saved site shortcuts",
-      "Global keyboard shortcut",
-      "Per-site zoom controls",
+      "Unlimited sites",
+      "Global shortcut",
+      "Session persistence",
       "Lifetime updates",
     ],
   },
+
   faq: {
     id: "faq",
-    headline: "Frequently asked questions",
+    headline: "FAQ",
+
     items: [
       {
-        q: "Is QuickPeek a subscription?",
-        a: "No. QuickPeek is a one-time purchase on Gumroad.",
+        q: "Is this just a browser?",
+        a:
+          "No. It’s a lightweight menu bar panel optimized for quick access — not browsing.",
       },
       {
-        q: "Can I add my own websites?",
-        a: "Yes. You can add, reorder, and manage custom sites directly in settings or quick-add flows.",
+        q: "Why not just use Chrome?",
+        a:
+          "Because Chrome is built for sessions. QuickPeek is built for checks.",
       },
       {
-        q: "What keyboard controls are supported?",
-        a: "QuickPeek supports global open shortcut, Cmd+1..9 tab switching, and panel zoom shortcuts.",
+        q: "Can I add any site?",
+        a: "Yes. Anything with a URL.",
       },
       {
-        q: "Which macOS versions are supported?",
-        a: "QuickPeek is built for macOS Sonoma and newer.",
+        q: "Will this slow my system?",
+        a:
+          "No. It’s designed to stay lightweight and out of your way.",
       },
     ],
   },
+
   footer: {
     productLine: "QuickPeek",
-    platformLine: "Built for macOS Sonoma & above",
+    platformLine: "macOS Sonoma+",
     ctaLabel: "Buy on Gumroad",
   },
 };

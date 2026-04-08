@@ -4,128 +4,174 @@ export const swiftGPTContent: LandingPageContent = {
   brand: "SwiftGPT",
   brandIcon: "/swiftgpt-icon.svg",
   gumroadUrl: "https://shakthisagar.gumroad.com",
+
   navLinks: [
     { label: "Demo", href: "#demo" },
-    { label: "Features", href: "#features" },
-    { label: "How it works", href: "#how-it-works" },
+    { label: "Why", href: "#features" },
+    { label: "Setup", href: "#how-it-works" },
     { label: "Pricing", href: "#pricing" },
     { label: "FAQ", href: "#faq" },
   ],
+
   hero: {
-    badge: "Built for macOS",
-    headline: "Your AI tabs in one panel,\none shortcut away.",
+    badge: "macOS • distraction-free AI access",
+
+    headline:
+      "Ask AI without\nleaving your window.",
+
     subheadline:
-      "SwiftGPT is an AI-first setup of the same fast menu bar panel: open ChatGPT, Gemini, Claude, and your custom AI sites without browser clutter.",
-    ctaText: "Get SwiftGPT for $5",
-    priceNote: "One-time purchase. Lifetime updates.",
+      "SwiftGPT opens ChatGPT, Gemini, Claude, and your AI tools in a fast menu bar panel — so you can ask something quickly and get back to work without switching apps.",
+
+    ctaText: "Buy for $5",
+    priceNote: "One-time. No subscriptions.",
+
     previewCards: [
-      { title: "ChatGPT", subtitle: "Default tab, always ready" },
-      { title: "Gemini + Claude", subtitle: "Cmd+1..9 instant switching" },
-      { title: "Custom AI Sites", subtitle: "Add and reorder your stack" },
+      { title: "In VSCode?", subtitle: "Ask without switching apps" },
+      { title: "Quick answer", subtitle: "Open → ask → close" },
+      { title: "Stay focused", subtitle: "No browser distraction" },
     ],
   },
+
   demo: {
     id: "demo",
-    eyebrow: "AI workflows without the browser maze",
-    headline: "Open, ask, and switch models in seconds.",
+    eyebrow: "AI without interruption",
+
+    headline:
+      "Don’t break your flow\njust to ask something.",
+
     description:
-      "Launch SwiftGPT from the menu bar or global shortcut, jump between AI tabs, and keep prompts flowing from a compact native panel.",
-    placeholderImage: "/screenshot.png",
+      "Switching to a browser just to ask ChatGPT breaks your momentum. SwiftGPT lets you open a panel, ask, and close it — all without leaving your current window.",
+
+    videoUrl: "/demo.mp4",
   },
+
   comparison: {
     id: "features",
-    eyebrow: "Why it matters",
-    headline: "Browser-tab overhead kills fast AI iteration.",
+    eyebrow: "The real problem",
+
+    headline:
+      "Switching apps kills focus.",
+
     before: {
       title: "Without SwiftGPT",
-      body: "Find the right tab, wait for reloads, lose your prompt context, repeat across multiple AI tools.",
+      body:
+        "Cmd+Tab → open browser → find tab → ask → get distracted → lose flow.",
     },
+
     after: {
       title: "With SwiftGPT",
-      body: "Use one always-ready panel, switch models with keyboard shortcuts, keep your working context while iterating faster.",
+      body:
+        "Shortcut → ask → close → continue working. No context loss.",
     },
   },
+
   howItWorks: {
     id: "how-it-works",
-    eyebrow: "How it works",
-    headline: "Set once, use all day.",
+    eyebrow: "Setup",
+
+    headline: "Takes less than a minute.",
+
     steps: [
       {
-        title: "1. Configure your tabs",
-        body: "Start with default sites like ChatGPT, Gemini, and Claude, then add or reorder any custom AI site.",
+        title: "Add your AI tools",
+        body:
+          "Start with ChatGPT, Gemini, Claude, or add any AI site you use.",
       },
       {
-        title: "2. Set your global shortcut",
-        body: "Define the hotkey that opens SwiftGPT instantly from anywhere in macOS.",
+        title: "Set your shortcut",
+        body:
+          "Open SwiftGPT instantly from anywhere in macOS.",
       },
       {
-        title: "3. Prompt and switch quickly",
-        body: "Use Cmd+1..9 for tab switching, keep output focused, and close the panel when done.",
+        title: "Ask and move on",
+        body:
+          "Open, ask, get your answer, and close. Stay in your workflow.",
       },
     ],
   },
+
   engineering: {
-    eyebrow: "Built the right way",
-    headline: "Native panel architecture for low-friction AI use.",
+    eyebrow: "Why it feels fast",
+
+    headline: "Built for quick access, not browsing.",
+
     cards: [
       {
-        title: "Persistent web views",
-        description: "Each tab uses a managed WKWebView so sessions stay warm and context switches feel instant.",
+        title: "Warm sessions",
+        description:
+          "Tabs stay alive. No reloads, no re-login, no waiting.",
       },
       {
-        title: "Custom panel sizing",
-        description: "Tune width and height with presets or manual values to match your workflow and display.",
+        title: "Instant open",
+        description:
+          "Menu bar panel launches in milliseconds — always ready.",
       },
       {
-        title: "Global hotkey system",
-        description: "Carbon-based shortcut registration opens SwiftGPT from anywhere without Accessibility friction.",
+        title: "Keyboard-first",
+        description:
+          "Global shortcut + Cmd+1..9 switching. No mouse needed.",
       },
       {
-        title: "Signed auto-updates",
-        description: "Sparkle-backed update checks keep the app current with secure delivery.",
+        title: "Lightweight panel",
+        description:
+          "Runs as a minimal native view, not a heavy browser window.",
       },
     ],
   },
+
   pricing: {
     id: "pricing",
-    eyebrow: "Simple pricing",
-    headline: "A focused AI copilot for your menu bar.",
+    eyebrow: "Pricing",
+
+    headline: "Pay once. Stay in flow every day.",
+
     price: "$5",
     currency: "USD",
-    subtitle: "Pay once. Prompt faster. Lifetime updates included.",
-    ctaText: "Get SwiftGPT Now",
+
+    subtitle:
+      "If you ask AI even a few times a day, this removes constant friction.",
+
+    ctaText: "Get SwiftGPT",
+
     features: [
-      "Default + custom AI site tabs",
-      "Global launch shortcut",
-      "Cmd+1..9 quick tab switching",
-      "Lifetime updates",
+      "AI tools in one panel",
+      "Custom AI site support",
+      "Global shortcut",
+      "Fast tab switching",
     ],
   },
+
   faq: {
     id: "faq",
-    headline: "Frequently asked questions",
+    headline: "FAQ",
+
     items: [
       {
+        q: "Why not just use a browser?",
+        a:
+          "Because switching apps breaks your flow. SwiftGPT lets you ask without leaving what you're doing.",
+      },
+      {
         q: "Which AI tools are supported?",
-        a: "SwiftGPT starts with ChatGPT, Gemini, and Claude tabs, and you can add any AI web app URL you use.",
+        a:
+          "ChatGPT, Gemini, Claude by default. You can add any AI site.",
       },
       {
-        q: "Can I customize the shortcut?",
-        a: "Yes. Shortcut recording is built into settings so you can define your preferred key combo.",
-      },
-      {
-        q: "Can I reorder or remove tabs?",
-        a: "Yes. Tabs are fully editable in settings, including add, move up/down, and delete actions.",
+        q: "Can I customize shortcuts?",
+        a:
+          "Yes. You can define your own global shortcut in settings.",
       },
       {
         q: "Is it a one-time purchase?",
-        a: "Yes. SwiftGPT is sold as a one-time license with updates.",
+        a:
+          "Yes. No subscriptions.",
       },
     ],
   },
+
   footer: {
     productLine: "SwiftGPT",
-    platformLine: "Built for macOS Sonoma & above",
+    platformLine: "macOS Sonoma+",
     ctaLabel: "Buy on Gumroad",
   },
 };

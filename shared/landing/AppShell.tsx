@@ -43,6 +43,7 @@ export function LandingPageApp({ content, themeStorageKey }: LandingPageAppProps
         brandIcon={content.brandIcon}
         navLinks={content.navLinks}
         gumroadUrl={content.gumroadUrl}
+        ctaText={content.pricing.ctaText}
         theme={theme}
         onToggleTheme={() => setTheme((prev) => (prev === "light" ? "dark" : "light"))}
       />
