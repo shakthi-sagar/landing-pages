@@ -11,6 +11,7 @@ export type PreviewCard = {
 export type ComparisonCard = {
   title: string;
   body: string;
+  points?: string[];
 };
 
 export type Step = {

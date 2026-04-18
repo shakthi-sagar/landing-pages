@@ -6,8 +6,12 @@ type ComparisonSectionProps = {
 };
 
 export function ComparisonSection({ section }: ComparisonSectionProps) {
-  const beforePoints = section.before.body.split(",").map((point) => point.trim()).filter(Boolean);
-  const afterPoints = section.after.body.split(",").map((point) => point.trim()).filter(Boolean);
+  const beforePoints = section.before.points?.length
+    ? section.before.points
+    : ["Tab overload", "Repeated searching", "Frequent context switching"];
+  const afterPoints = section.after.points?.length
+    ? section.after.points
+    : ["One-click access", "Native menu bar workflow", "Smoother deep work"];
 
   return (
     <section id={section.id} className="section-shell py-20 md:py-28">
@@ -24,7 +28,7 @@ export function ComparisonSection({ section }: ComparisonSectionProps) {
           <h3 className="mt-3 text-2xl font-bold text-slate-900">{section.before.title}</h3>
           <p className="text-muted mt-3 text-base leading-relaxed">{section.before.body}</p>
           <div className="mt-6 space-y-3">
-            {(beforePoints.length > 1 ? beforePoints : ["Tab overload", "Repeated searching", "Frequent context switching"]).map((point) => (
+            {beforePoints.map((point) => (
               <div key={point} className="flex items-center gap-3 rounded-xl border border-slate-200/60 bg-slate-50/5 p-3 backdrop-blur-sm transition-all hover:bg-slate-50/10">
                 <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-200 text-slate-900 shadow-sm keep-light">
                   <Minus className="h-3.5 w-3.5" strokeWidth={4} />
@@ -45,7 +49,7 @@ export function ComparisonSection({ section }: ComparisonSectionProps) {
           <h3 className="mt-3 text-2xl font-extrabold">{section.after.title}</h3>
           <p className="mt-3 text-base font-medium leading-relaxed text-white">{section.after.body}</p>
           <div className="mt-6 space-y-3">
-            {(afterPoints.length > 1 ? afterPoints : ["One click access", "Native menu bar workflow", "Smoother deep work"]).map((point) => (
+            {afterPoints.map((point) => (
               <div key={point} className="flex items-center gap-3 rounded-xl border border-white/30 bg-white/15 px-4 py-2.5 backdrop-blur-md transition-all hover:bg-white/20">
                 <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-white/20 text-[10px] font-bold">
                   <Plus className="h-3.5 w-3.5 text-white" strokeWidth={3} />
