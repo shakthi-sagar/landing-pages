@@ -9,39 +9,102 @@ type DemoSectionProps = {
 
 export function DemoSection({ section }: DemoSectionProps) {
   const videoRef = useRef<HTMLVideoElement | null>(null);
+  const hasStartedPlaybackRef = useRef(false);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [currentTime, setCurrentTime] = useState(0);
+  const [duration, setDuration] = useState(0);
 
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
 
-    const syncState = () => {
+    const syncPlaybackState = () => {
       setIsPlaying(!video.paused && !video.ended);
     };
+    const syncTime = () => {
+      setCurrentTime(video.currentTime || 0);
+      setDuration(Number.isFinite(video.duration) ? video.duration : 0);
+    };
+    const resetToStartOnInitialLoad = () => {
+      if (hasStartedPlaybackRef.current) return;
+      try {
+        video.currentTime = 0;
+      } catch {
+        // Some browsers block immediate seeks before ready state settles.
+      }
+      setCurrentTime(0);
+    };
 
-    video.addEventListener("play", syncState);
-    video.addEventListener("pause", syncState);
-    video.addEventListener("ended", syncState);
+    video.addEventListener("play", syncPlaybackState);
+    video.addEventListener("pause", syncPlaybackState);
+    video.addEventListener("ended", syncPlaybackState);
+    video.addEventListener("timeupdate", syncTime);
+    video.addEventListener("loadedmetadata", syncTime);
+    video.addEventListener("loadedmetadata", resetToStartOnInitialLoad);
 
     return () => {
-      video.removeEventListener("play", syncState);
-      video.removeEventListener("pause", syncState);
-      video.removeEventListener("ended", syncState);
+      video.removeEventListener("play", syncPlaybackState);
+      video.removeEventListener("pause", syncPlaybackState);
+      video.removeEventListener("ended", syncPlaybackState);
+      video.removeEventListener("timeupdate", syncTime);
+      video.removeEventListener("loadedmetadata", syncTime);
+      video.removeEventListener("loadedmetadata", resetToStartOnInitialLoad);
     };
   }, []);
+  
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+    hasStartedPlaybackRef.current = false;
+    video.pause();
+    try {
+      video.currentTime = 0;
+    } catch {
+      // No-op for browsers that block seek before metadata is ready.
+    }
+    setCurrentTime(0);
+    setIsPlaying(false);
+  }, [section.videoUrl]);
 
   const togglePlayback = async () => {
     const video = videoRef.current;
     if (!video) return;
     if (video.paused || video.ended) {
+      if (!hasStartedPlaybackRef.current) {
+        try {
+          video.currentTime = 0;
+        } catch {
+          // No-op for restricted seeks.
+        }
+      }
+      if (video.ended || (video.duration > 0 && video.currentTime >= video.duration - 0.05)) {
+        video.currentTime = 0;
+      }
       try {
         await video.play();
+        hasStartedPlaybackRef.current = true;
       } catch {
         setIsPlaying(false);
       }
       return;
     }
     video.pause();
+  };
+  
+  const handleSeek = (value: string) => {
+    const video = videoRef.current;
+    if (!video) return;
+    const next = Number(value);
+    if (!Number.isFinite(next)) return;
+    video.currentTime = next;
+    setCurrentTime(next);
+  };
+  
+  const formatTime = (seconds: number) => {
+    const safe = Math.max(0, Math.floor(seconds));
+    const mins = Math.floor(safe / 60);
+    const secs = safe % 60;
+    return `${mins}:${secs.toString().padStart(2, "0")}`;
   };
 
   return (
@@ -70,20 +133,42 @@ export function DemoSection({ section }: DemoSectionProps) {
           poster={section.placeholderImage}
           playsInline
         >
-          {section.videoUrl ? <source src={section.videoUrl} type="video/mp4" /> : null}
+          {section.videoUrl ? <source src={section.videoUrl} /> : null}
           Your browser does not support embedded videos.
         </video>
 
-        <motion.button
-          type="button"
-          onClick={togglePlayback}
-          aria-label={isPlaying ? "Pause demo video" : "Play demo video"}
-          whileHover={{ scale: 1.06 }}
-          whileTap={{ scale: 0.95 }}
-          className="btn-primary absolute bottom-4 right-4 inline-flex h-10 w-10 items-center justify-center rounded-full shadow-lg backdrop-blur-sm transition-colors"
-        >
-          {isPlaying ? <Pause className="h-4 w-4" strokeWidth={2.6} /> : <Play className="ml-0.5 h-4 w-4" strokeWidth={2.6} />}
-        </motion.button>
+        <div className="absolute bottom-4 left-1/2 flex w-[min(92%,680px)] -translate-x-1/2 items-center gap-3 rounded-full border border-white/30 bg-slate-900/70 px-3 py-2 backdrop-blur-md">
+          <motion.button
+            type="button"
+            onClick={togglePlayback}
+            aria-label={isPlaying ? "Pause demo video" : "Play demo video"}
+            whileHover={{ scale: 1.06 }}
+            whileTap={{ scale: 0.95 }}
+            className="btn-primary inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full shadow-lg transition-colors"
+          >
+            {isPlaying ? <Pause className="h-4 w-4" strokeWidth={2.6} /> : <Play className="ml-0.5 h-4 w-4" strokeWidth={2.6} />}
+          </motion.button>
+
+          <span className="w-10 shrink-0 text-xs font-semibold tabular-nums text-white/90">
+            {formatTime(currentTime)}
+          </span>
+
+          <input
+            type="range"
+            min={0}
+            max={duration || 0}
+            step={0.01}
+            value={Math.min(currentTime, duration || 0)}
+            onChange={(event) => handleSeek(event.target.value)}
+            disabled={duration <= 0}
+            aria-label="Seek demo video"
+            className="h-1 w-full cursor-pointer accent-white disabled:cursor-not-allowed disabled:opacity-50"
+          />
+
+          <span className="w-10 shrink-0 text-right text-xs font-semibold tabular-nums text-white/90">
+            {formatTime(duration)}
+          </span>
+        </div>
       </motion.div>
     </section>
   );
