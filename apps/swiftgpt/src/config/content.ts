@@ -14,21 +14,21 @@ export const swiftGPTContent: LandingPageContent = {
   ],
 
   hero: {
-    badge: "macOS • distraction-free AI access",
+    badge: "macOS menu bar app for ChatGPT, Claude, Gemini",
 
     headline:
-      "Ask AI without\nleaving your window.",
+      "Use AI in 2 seconds,\nwithout context switching.",
 
     subheadline:
-      "SwiftGPT opens ChatGPT, Gemini, Claude, and your AI tools in a fast menu bar panel — so you can ask something quickly and get back to work without switching apps.",
+      "SwiftGPT keeps your AI tools one shortcut away in a lightweight menu bar panel. Ask, get what you need, and close it without leaving your coding, writing, or design flow.",
 
-    ctaText: "Buy for $5",
-    priceNote: "One-time. No subscriptions.",
+    ctaText: "Get SwiftGPT for $5",
+    priceNote: "One-time purchase. Free updates.",
 
     previewCards: [
-      { title: "In VSCode?", subtitle: "Ask without switching apps" },
-      { title: "Quick answer", subtitle: "Open → ask → close" },
-      { title: "Stay focused", subtitle: "No browser distraction" },
+      { title: "No app hopping", subtitle: "Ask from any workspace" },
+      { title: "Fast loop", subtitle: "Open -> ask -> close" },
+      { title: "Keep momentum", subtitle: "Less context loss, more output" },
     ],
   },
 
@@ -37,10 +37,10 @@ export const swiftGPTContent: LandingPageContent = {
     eyebrow: "AI without interruption",
 
     headline:
-      "Don’t break your flow\njust to ask something.",
+      "Stop paying the context-switch tax.",
 
     description:
-      "Switching to a browser just to ask ChatGPT breaks your momentum. SwiftGPT lets you open a panel, ask, and close it — all without leaving your current window.",
+      "Most AI questions take 10 seconds. The app switching around them takes longer and breaks focus. SwiftGPT removes that overhead so your work stays uninterrupted.",
 
     videoUrl: "/demo.mp4",
   },
@@ -50,18 +50,18 @@ export const swiftGPTContent: LandingPageContent = {
     eyebrow: "The real problem",
 
     headline:
-      "Switching apps kills focus.",
+      "Your brain pays for every tab switch.",
 
     before: {
       title: "Without SwiftGPT",
       body:
-        "Cmd+Tab → open browser → find tab → ask → get distracted → lose flow.",
+        "Leave your work -> open browser -> find AI tab -> get distracted by tabs/notifications -> lose your train of thought.",
     },
 
     after: {
       title: "With SwiftGPT",
       body:
-        "Shortcut → ask → close → continue working. No context loss.",
+        "Hit shortcut -> ask -> close panel -> keep shipping. Same context, less friction.",
     },
   },
 
@@ -69,23 +69,23 @@ export const swiftGPTContent: LandingPageContent = {
     id: "how-it-works",
     eyebrow: "Setup",
 
-    headline: "Takes less than a minute.",
+    headline: "Set up once, use all day.",
 
     steps: [
       {
-        title: "Add your AI tools",
+        title: "Add your favorite AI sites",
         body:
-          "Start with ChatGPT, Gemini, Claude, or add any AI site you use.",
+          "Starts with ChatGPT, Gemini, and Claude. Add any other AI site you rely on.",
       },
       {
-        title: "Set your shortcut",
+        title: "Pick one global shortcut",
         body:
           "Open SwiftGPT instantly from anywhere in macOS.",
       },
       {
-        title: "Ask and move on",
+        title: "Ask, close, continue",
         body:
-          "Open, ask, get your answer, and close. Stay in your workflow.",
+          "Keep AI nearby for quick questions without turning it into a browsing session.",
       },
     ],
   },
@@ -93,28 +93,28 @@ export const swiftGPTContent: LandingPageContent = {
   engineering: {
     eyebrow: "Why it feels fast",
 
-    headline: "Built for quick access, not browsing.",
+    headline: "Engineered for speed and focus.",
 
     cards: [
       {
-        title: "Warm sessions",
+        title: "Persistent sessions",
         description:
-          "Tabs stay alive. No reloads, no re-login, no waiting.",
+          "Your tabs stay warm so AI tools are ready without constant reloads.",
       },
       {
         title: "Instant open",
         description:
-          "Menu bar panel launches in milliseconds — always ready.",
+          "Panel opens from the menu bar in milliseconds.",
       },
       {
         title: "Keyboard-first",
         description:
-          "Global shortcut + Cmd+1..9 switching. No mouse needed.",
+          "Global shortcut plus quick tab switching. Built for fast hands.",
       },
       {
-        title: "Lightweight panel",
+        title: "Minimal surface area",
         description:
-          "Runs as a minimal native view, not a heavy browser window.",
+          "Only the UI you need for fast AI lookups, not another heavy browser workflow.",
       },
     ],
   },
@@ -123,21 +123,22 @@ export const swiftGPTContent: LandingPageContent = {
     id: "pricing",
     eyebrow: "Pricing",
 
-    headline: "Pay once. Stay in flow every day.",
+    headline: "One tiny purchase, daily time back.",
 
     price: "$5",
     currency: "USD",
 
     subtitle:
-      "If you ask AI even a few times a day, this removes constant friction.",
+      "If AI is part of your daily workflow, SwiftGPT pays for itself quickly in recovered focus and time.",
 
-    ctaText: "Get SwiftGPT",
+    ctaText: "Buy SwiftGPT",
 
     features: [
       "AI tools in one panel",
       "Custom AI site support",
       "Global shortcut",
       "Fast tab switching",
+      "One-time payment, no subscription",
     ],
   },
 
@@ -147,24 +148,24 @@ export const swiftGPTContent: LandingPageContent = {
 
     items: [
       {
-        q: "Why not just use a browser?",
+        q: "Why not just pin AI in my browser?",
         a:
-          "Because switching apps breaks your flow. SwiftGPT lets you ask without leaving what you're doing.",
+          "You still have to app-switch, find the right tab, and re-focus. SwiftGPT removes those micro-interruptions by keeping AI one shortcut away.",
       },
       {
         q: "Which AI tools are supported?",
         a:
-          "ChatGPT, Gemini, Claude by default. You can add any AI site.",
+          "ChatGPT, Gemini, and Claude are included by default, and you can add any AI website.",
       },
       {
-        q: "Can I customize shortcuts?",
+        q: "Can I customize the shortcut and tabs?",
         a:
-          "Yes. You can define your own global shortcut in settings.",
+          "Yes. Set your own global shortcut and organize multiple AI sites as tabs.",
       },
       {
         q: "Is it a one-time purchase?",
         a:
-          "Yes. No subscriptions.",
+          "Yes. Pay once and use it without a recurring subscription.",
       },
     ],
   },
