@@ -1,5 +1,23 @@
 import type { LandingPageContent } from "../../../../shared/landing/types";
 
+/**
+ * SwiftGPT product messaging source of truth.
+ *
+ * Purpose:
+ * - Present SwiftGPT as a fast, distraction-free way to access AI on macOS.
+ * - Emphasize workflow continuity: ask quickly, close quickly, keep shipping.
+ *
+ * Product philosophy:
+ * - AI access should feel like a utility, not a separate browsing session.
+ * - Minimize context switching and cognitive overhead.
+ * - Keep pricing simple and approachable (one-time purchase).
+ *
+ * Core feature themes to reinforce in copy:
+ * - Menu bar panel + global shortcut for instant access.
+ * - Multi-site support (ChatGPT, Gemini, Claude, and custom AI sites).
+ * - Keyboard-first, quick tab switching, and lightweight native feel.
+ * - Fast ask-and-return loop for developers, creators, and knowledge work.
+ */
 export const swiftGPTContent: LandingPageContent = {
   brand: "SwiftGPT",
   brandIcon: "/swiftgpt-icon.svg",
@@ -14,21 +32,21 @@ export const swiftGPTContent: LandingPageContent = {
   ],
 
   hero: {
-    badge: "macOS menu bar app for ChatGPT, Claude, Gemini",
+    badge: "macOS • distraction-free AI access",
 
     headline:
-      "Use AI in 2 seconds,\nwithout context switching.",
+      "Ask AI without\nleaving your window.",
 
     subheadline:
-      "SwiftGPT keeps your AI tools one shortcut away in a lightweight menu bar panel. Ask, get what you need, and close it without leaving your coding, writing, or design flow.",
+      "SwiftGPT opens ChatGPT, Gemini, Claude, and your AI tools in a fast menu bar panel — so you can ask something quickly and get back to work without switching apps.",
 
-    ctaText: "Get SwiftGPT for $5",
-    priceNote: "One-time purchase. Free updates.",
+    ctaText: "Buy for $5",
+    priceNote: "One-time. No subscriptions.",
 
     previewCards: [
-      { title: "No app hopping", subtitle: "Ask from any workspace" },
-      { title: "Fast loop", subtitle: "Open -> ask -> close" },
-      { title: "Keep momentum", subtitle: "Less context loss, more output" },
+      { title: "In VSCode?", subtitle: "Ask without switching apps" },
+      { title: "Quick answer", subtitle: "Open → ask → close" },
+      { title: "Stay focused", subtitle: "No browser distraction" },
     ],
   },
 
@@ -37,10 +55,10 @@ export const swiftGPTContent: LandingPageContent = {
     eyebrow: "AI without interruption",
 
     headline:
-      "Stop paying the context-switch tax.",
+      "Don’t break your flow\njust to ask something.",
 
     description:
-      "Most AI questions take 10 seconds. The app switching around them takes longer and breaks focus. SwiftGPT removes that overhead so your work stays uninterrupted.",
+      "Switching to a browser just to ask ChatGPT breaks your momentum. SwiftGPT lets you open a panel, ask, and close it — all without leaving your current window.",
 
     videoUrl: "/demo.mp4",
   },
@@ -50,18 +68,18 @@ export const swiftGPTContent: LandingPageContent = {
     eyebrow: "The real problem",
 
     headline:
-      "Your brain pays for every tab switch.",
+      "Switching apps kills focus.",
 
     before: {
       title: "Without SwiftGPT",
       body:
-        "Leave your work -> open browser -> find AI tab -> get distracted by tabs/notifications -> lose your train of thought.",
+        "Cmd+Tab → open browser → find tab → ask → get distracted → lose flow.",
     },
 
     after: {
       title: "With SwiftGPT",
       body:
-        "Hit shortcut -> ask -> close panel -> keep shipping. Same context, less friction.",
+        "Shortcut → ask → close → continue working. No context loss.",
     },
   },
 
@@ -69,23 +87,23 @@ export const swiftGPTContent: LandingPageContent = {
     id: "how-it-works",
     eyebrow: "Setup",
 
-    headline: "Set up once, use all day.",
+    headline: "Takes less than a minute.",
 
     steps: [
       {
-        title: "Add your favorite AI sites",
+        title: "Add your AI tools",
         body:
-          "Starts with ChatGPT, Gemini, and Claude. Add any other AI site you rely on.",
+          "Start with ChatGPT, Gemini, Claude, or add any AI site you use.",
       },
       {
-        title: "Pick one global shortcut",
+        title: "Set your shortcut",
         body:
           "Open SwiftGPT instantly from anywhere in macOS.",
       },
       {
-        title: "Ask, close, continue",
+        title: "Ask and move on",
         body:
-          "Keep AI nearby for quick questions without turning it into a browsing session.",
+          "Open, ask, get your answer, and close. Stay in your workflow.",
       },
     ],
   },
@@ -93,28 +111,28 @@ export const swiftGPTContent: LandingPageContent = {
   engineering: {
     eyebrow: "Why it feels fast",
 
-    headline: "Engineered for speed and focus.",
+    headline: "Built for quick access, not browsing.",
 
     cards: [
       {
-        title: "Persistent sessions",
+        title: "Warm sessions",
         description:
-          "Your tabs stay warm so AI tools are ready without constant reloads.",
+          "Tabs stay alive. No reloads, no re-login, no waiting.",
       },
       {
         title: "Instant open",
         description:
-          "Panel opens from the menu bar in milliseconds.",
+          "Menu bar panel launches in milliseconds — always ready.",
       },
       {
         title: "Keyboard-first",
         description:
-          "Global shortcut plus quick tab switching. Built for fast hands.",
+          "Global shortcut + Cmd+1..9 switching. No mouse needed.",
       },
       {
-        title: "Minimal surface area",
+        title: "Lightweight panel",
         description:
-          "Only the UI you need for fast AI lookups, not another heavy browser workflow.",
+          "Runs as a minimal native view, not a heavy browser window.",
       },
     ],
   },
@@ -123,22 +141,21 @@ export const swiftGPTContent: LandingPageContent = {
     id: "pricing",
     eyebrow: "Pricing",
 
-    headline: "One tiny purchase, daily time back.",
+    headline: "Pay once. Stay in flow every day.",
 
     price: "$5",
     currency: "USD",
 
     subtitle:
-      "If AI is part of your daily workflow, SwiftGPT pays for itself quickly in recovered focus and time.",
+      "If you ask AI even a few times a day, this removes constant friction.",
 
-    ctaText: "Buy SwiftGPT",
+    ctaText: "Get SwiftGPT",
 
     features: [
       "AI tools in one panel",
       "Custom AI site support",
       "Global shortcut",
       "Fast tab switching",
-      "One-time payment, no subscription",
     ],
   },
 
@@ -148,24 +165,24 @@ export const swiftGPTContent: LandingPageContent = {
 
     items: [
       {
-        q: "Why not just pin AI in my browser?",
+        q: "Why not just use a browser?",
         a:
-          "You still have to app-switch, find the right tab, and re-focus. SwiftGPT removes those micro-interruptions by keeping AI one shortcut away.",
+          "Because switching apps breaks your flow. SwiftGPT lets you ask without leaving what you're doing.",
       },
       {
         q: "Which AI tools are supported?",
         a:
-          "ChatGPT, Gemini, and Claude are included by default, and you can add any AI website.",
+          "ChatGPT, Gemini, Claude by default. You can add any AI site.",
       },
       {
-        q: "Can I customize the shortcut and tabs?",
+        q: "Can I customize shortcuts?",
         a:
-          "Yes. Set your own global shortcut and organize multiple AI sites as tabs.",
+          "Yes. You can define your own global shortcut in settings.",
       },
       {
         q: "Is it a one-time purchase?",
         a:
-          "Yes. Pay once and use it without a recurring subscription.",
+          "Yes. No subscriptions.",
       },
     ],
   },
