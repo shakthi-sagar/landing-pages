@@ -7,7 +7,17 @@ type EngineeringSectionProps = {
 
 export function EngineeringSection({ section }: EngineeringSectionProps) {
   const icons = [Bolt, ShieldCheck, RefreshCw, Keyboard];
-  const spanClasses = ["lg:col-span-2", "lg:col-span-1", "lg:col-span-1", "lg:col-span-2"];
+
+  const spanClassForIndex = (idx: number) => {
+    const row = Math.floor(idx / 2);
+    const isFirstInPair = idx % 2 === 0;
+    const isWideFirst = row % 2 === 0;
+
+    if (isFirstInPair) {
+      return isWideFirst ? "lg:col-span-2" : "lg:col-span-1";
+    }
+    return isWideFirst ? "lg:col-span-1" : "lg:col-span-2";
+  };
 
   return (
     <section className="section-shell py-20 md:py-28">
@@ -22,7 +32,7 @@ export function EngineeringSection({ section }: EngineeringSectionProps) {
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {section.cards.map((item, idx) => {
           const Icon = icons[idx] ?? Bolt;
-          const spanClass = spanClasses[idx] ?? "lg:col-span-1";
+          const spanClass = spanClassForIndex(idx);
 
           return (
             <article
