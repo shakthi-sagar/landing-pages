@@ -39,6 +39,8 @@ export type LandingPageContent = {
     headline: string;
     subheadline: string;
     ctaText: string;
+    secondaryCtaText?: string;
+    secondaryCtaUrl?: string;
     priceNote: string;
     previewCards: PreviewCard[];
   };

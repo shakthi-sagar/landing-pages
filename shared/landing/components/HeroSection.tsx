@@ -25,16 +25,28 @@ export function HeroSection({ hero, gumroadUrl }: HeroSectionProps) {
           {hero.subheadline}
         </p>
 
-        <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <a
-            href={gumroadUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="btn-primary group inline-flex items-center gap-2 rounded-2xl px-7 py-4 text-lg font-bold transition-all"
-          >
-            {hero.ctaText}
-            <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" strokeWidth={2.5} />
-          </a>
+        <div className="mt-10 flex flex-col items-center gap-3">
+          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <a
+              href={gumroadUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="btn-primary group inline-flex items-center gap-2 rounded-2xl px-7 py-4 text-lg font-bold transition-all"
+            >
+              {hero.ctaText}
+              <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" strokeWidth={2.5} />
+            </a>
+            {hero.secondaryCtaText && hero.secondaryCtaUrl ? (
+              <a
+                href={hero.secondaryCtaUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 rounded-2xl border border-transparent bg-[color:var(--cta-bg)] px-7 py-4 text-lg font-bold text-white transition-colors hover:bg-[color:var(--cta-hover)]"
+              >
+                {hero.secondaryCtaText}
+              </a>
+            ) : null}
+          </div>
           <p className="text-secondary text-sm font-semibold">{hero.priceNote}</p>
         </div>
       </div>

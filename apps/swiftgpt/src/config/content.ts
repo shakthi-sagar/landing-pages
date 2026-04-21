@@ -88,8 +88,10 @@ export const swiftGPTContent: LandingPageContent = {
     subheadline:
       "SwiftGPT is a native menu bar panel that keeps ChatGPT, Gemini, Claude, and any AI site one keystroke away — so you stay in your editor, your doc, your terminal. Open, ask, close, keep working.",
 
-    ctaText: "Buy for $5",
-    priceNote: "One-time purchase. No subscription.",
+    ctaText: "Buy SwiftGPT for $5",
+    secondaryCtaText: "Download Trial",
+    secondaryCtaUrl: "https://updates.shakthisagar.dev/SwiftGPT/latest/SwiftGPT-macos.dmg",
+    priceNote: "One-time purchase. Includes in-app 7-day trial.",
 
     previewCards: [
       { title: "Screenshot → AI", subtitle: "Capture, paste, ask — one shortcut" },
