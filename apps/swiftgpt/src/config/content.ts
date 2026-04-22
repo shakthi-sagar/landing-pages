@@ -88,7 +88,7 @@ export const swiftGPTContent: LandingPageContent = {
     subheadline:
       "SwiftGPT is a native menu bar panel that keeps ChatGPT, Gemini, Claude, and any AI site one keystroke away — so you stay in your editor, your doc, your terminal. Open, ask, close, keep working.",
 
-    ctaText: "Buy SwiftGPT for $5",
+    ctaText: "Buy SwiftGPT for $10",
     secondaryCtaText: "Download Trial",
     secondaryCtaUrl: "https://updates.shakthisagar.dev/SwiftGPT/latest/SwiftGPT-macos.dmg",
     priceNote: "One-time purchase. Includes in-app 7-day trial.",
@@ -215,13 +215,13 @@ export const swiftGPTContent: LandingPageContent = {
     id: "pricing",
     eyebrow: "Pricing",
 
-    headline: "Five dollars. Every day, forever.",
+    headline: "Ten dollars. Every day, forever.",
 
-    price: "$5",
+    price: "$10",
     currency: "USD",
 
     subtitle:
-      "You context-switch to AI dozens of times a day. At $5 once, SwiftGPT pays for itself the first morning.",
+      "You context-switch to AI dozens of times a day. At $10 once, SwiftGPT pays for itself quickly.",
 
     ctaText: "Get SwiftGPT",
 
