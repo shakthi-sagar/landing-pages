@@ -22,8 +22,10 @@ export const quickPeekContent: LandingPageContent = {
     subheadline:
       "QuickPeek turns your menu bar into a command center for the sites you live in — dashboards, docs, inboxes. Open, check, close. No tabs. No context loss.",
 
-    ctaText: "Buy for $5",
-    priceNote: "One-time. No BS subscriptions.",
+    ctaText: "Buy QuickPeek for $5",
+    secondaryCtaText: "Download Trial",
+    secondaryCtaUrl: "https://updates.shakthisagar.dev/QuickPeek/latest/QuickPeek-macos.dmg",
+    priceNote: "One-time purchase. Includes in-app 7-day trial.",
 
     previewCards: [
       { title: "Support Inbox", subtitle: "Check → close" },
