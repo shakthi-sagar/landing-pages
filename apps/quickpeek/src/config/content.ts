@@ -14,13 +14,13 @@ export const quickPeekContent: LandingPageContent = {
   ],
 
   hero: {
-    badge: "macOS only • built for dev workflows",
+    badge: "macOS menu bar • built for instant checks",
 
     headline:
-      "Stop opening a full browser\njust to check one thing.",
+      "Check any site in seconds.\nStay in your flow.",
 
     subheadline:
-      "QuickPeek turns your menu bar into a command center for the sites you live in — dashboards, docs, inboxes. Open, check, close. No tabs. No context loss.",
+      "QuickPeek is a native menu bar panel for dashboards, docs, inboxes, and admin pages. Open, check, close, continue working. No full browser detour.",
 
     ctaText: "Buy QuickPeek for $8",
     secondaryCtaText: "Download Trial",
@@ -28,21 +28,21 @@ export const quickPeekContent: LandingPageContent = {
     priceNote: "One-time purchase. Includes in-app 7-day trial.",
 
     previewCards: [
-      { title: "Support Inbox", subtitle: "Check → close" },
-      { title: "Analytics", subtitle: "Quick glance" },
-      { title: "Docs", subtitle: "Jump → copy → back" },
+      { title: "Saved Sites + Cmd+1..9", subtitle: "Switch instantly" },
+      { title: "Cmd+Shift+T Popup", subtitle: "Paste URL or search" },
+      { title: "7-Day Trial Included", subtitle: "Activate in-app" },
     ],
   },
 
   demo: {
     id: "demo",
-    eyebrow: "Your browser is overkill",
+    eyebrow: "Built for speed",
 
     headline:
-      "You don’t need 20 tabs\nfor 2-second checks.",
+      "You don’t need a full browser\nfor a quick check.",
 
     description:
-      "Opening Chrome → finding the tab → getting distracted → forgetting why you opened it. QuickPeek cuts that loop. One shortcut. One panel. Done.",
+      "Use your global shortcut for saved sites, or hit Cmd+Shift+T for a temporary popup. Paste a link or type a query, check what you need, and close.",
 
     videoUrl: "/demo.mp4",
   },
@@ -58,12 +58,22 @@ export const quickPeekContent: LandingPageContent = {
       title: "Browser flow",
       body:
         "Cmd+Tab → Chrome → find tab → open → see notifications → 5 minutes gone.",
+      points: [
+        "Slow startup for tiny tasks",
+        "Notifications and tabs pull attention",
+        "Hard to jump in and out quickly",
+      ],
     },
 
     after: {
       title: "QuickPeek flow",
       body:
         "Shortcut → panel opens → check → close. Back to work in seconds.",
+      points: [
+        "Global shortcut opens from anywhere",
+        "Cmd+Shift+T temporary popup for one-off links",
+        "Back/forward/reload controls built in",
+      ],
     },
   },
 
@@ -79,12 +89,12 @@ export const quickPeekContent: LandingPageContent = {
         body: "Download and drop into Applications. That’s it.",
       },
       {
-        title: "Add your tools",
-        body: "Paste links to dashboards, docs, inboxes. Reorder however you think.",
+        title: "Add your sites",
+        body: "Save dashboards, docs, inboxes, and internal tools. Reorder and switch with Cmd+1..9.",
       },
       {
-        title: "Use like muscle memory",
-        body: "Hit a shortcut, jump instantly, get out. No browsing.",
+        title: "Use main panel + temporary popup",
+        body: "Main panel for repeat checks. Cmd+Shift+T popup for one-off URLs or searches.",
       },
     ],
   },
@@ -98,22 +108,32 @@ export const quickPeekContent: LandingPageContent = {
       {
         title: "Instant open",
         description:
-          "Menu bar panel launches in milliseconds. No heavy browser startup.",
+          "QuickPeek opens as a native panel in milliseconds instead of launching a full browser session.",
       },
       {
-        title: "State preserved",
+        title: "Persistent sessions",
         description:
-          "Everything stays exactly where you left it. No reloads, no lost context.",
+          "Cookies and session state stay intact, so sites reopen where you left off.",
       },
       {
         title: "Keyboard-first",
         description:
-          "Global shortcut + Cmd+1..9 switching. Jump between sites without touching the mouse.",
+          "Custom global toggle plus configurable app shortcuts for tabs, popup, navigation, reload, and zoom.",
       },
       {
-        title: "Lightweight by design",
+        title: "Temporary popup workflow",
         description:
-          "Runs as a minimal native panel, not a full browser. Low memory, no tab bloat.",
+          "Cmd+Shift+T opens a separate popup with URL/search input and quick navigation controls.",
+      },
+      {
+        title: "Flexible search providers",
+        description:
+          "Choose Google, DuckDuckGo, Bing, or Brave for query input that is not a direct URL.",
+      },
+      {
+        title: "Trial + license gate",
+        description:
+          "One build for everyone: 7-day trial on first launch, then activate with your Gumroad key in-app.",
       },
     ],
   },
@@ -134,8 +154,13 @@ export const quickPeekContent: LandingPageContent = {
 
     features: [
       "Unlimited sites",
-      "Global shortcut",
+      "Custom global shortcut",
+      "Configurable app shortcuts",
+      "Cmd+1..9 site switching",
+      "Temporary popup (Cmd+Shift+T)",
+      "URL/search bar + navigation controls",
       "Session persistence",
+      "In-app 7-day trial and activation",
       "Lifetime updates",
     ],
   },
@@ -145,6 +170,11 @@ export const quickPeekContent: LandingPageContent = {
     headline: "FAQ",
 
     items: [
+      {
+        q: "Does QuickPeek include a trial?",
+        a:
+          "Yes. Every install starts with a 7-day trial, and you can activate anytime using your Gumroad license key in-app.",
+      },
       {
         q: "Is this just a browser?",
         a:
@@ -158,6 +188,21 @@ export const quickPeekContent: LandingPageContent = {
       {
         q: "Can I add any site?",
         a: "Yes. Anything with a URL.",
+      },
+      {
+        q: "What is the temporary popup for?",
+        a:
+          "Use Cmd+Shift+T to open a separate popup for one-off links or searches, without changing your saved site list.",
+      },
+      {
+        q: "Can I customize shortcuts?",
+        a:
+          "Yes. You can configure the global toggle plus app shortcuts for tab switching, popup, navigation, reload, and zoom.",
+      },
+      {
+        q: "Can I navigate inside the popup?",
+        a:
+          "Yes. The popup includes back, forward, reload, URL/search input, and open-in-browser actions.",
       },
       {
         q: "Will this slow my system?",

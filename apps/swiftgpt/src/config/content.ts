@@ -279,7 +279,7 @@ export const swiftGPTContent: LandingPageContent = {
       {
         q: "Is it a subscription?",
         a:
-          "No. It's a one-time $5 purchase with updates available through the built-in updater.",
+          "No. It's a one-time $10 purchase with updates available through the built-in updater.",
       },
       {
         q: "What macOS versions are supported?",
