@@ -14,13 +14,13 @@ export const quickPeekContent: LandingPageContent = {
   ],
 
   hero: {
-    badge: "macOS menu bar utility • built for fast checks",
+    badge: "macOS only • built for dev workflows",
 
     headline:
-      "Open any site in a second,\nthen get right back to work.",
+      "Stop opening a full browser\njust to check one thing.",
 
     subheadline:
-      "QuickPeek gives you a keyboard-first panel for saved sites plus a temporary popup for one-off links. Check dashboards, docs, and inboxes without opening a full browser session.",
+      "QuickPeek turns your menu bar into a command center for the sites you live in — dashboards, docs, inboxes. Open, check, close. No tabs. No context loss.",
 
     ctaText: "Buy QuickPeek for $8",
     secondaryCtaText: "Download Trial",
@@ -28,9 +28,9 @@ export const quickPeekContent: LandingPageContent = {
     priceNote: "One-time purchase. Includes in-app 7-day trial.",
 
     previewCards: [
-      { title: "Saved Site Panel", subtitle: "Open → check → close" },
-      { title: "Cmd+Shift+V Popup", subtitle: "Paste URL or search" },
-      { title: "7-Day Trial", subtitle: "Activate anytime in-app" },
+      { title: "Support Inbox", subtitle: "Check → close" },
+      { title: "Analytics", subtitle: "Quick glance" },
+      { title: "Docs", subtitle: "Jump → copy → back" },
     ],
   },
 
@@ -39,10 +39,10 @@ export const quickPeekContent: LandingPageContent = {
     eyebrow: "Your browser is overkill",
 
     headline:
-      "You don’t need a full browser\nfor 2-second tasks.",
+      "You don’t need 20 tabs\nfor 2-second checks.",
 
     description:
-      "Use your global shortcut for saved sites, or open the temporary popup, paste a link/search, and close. Back/forward/reload controls are there when you need them.",
+      "Opening Chrome → finding the tab → getting distracted → forgetting why you opened it. QuickPeek cuts that loop. One shortcut. One panel. Done.",
 
     videoUrl: "/demo.mp4",
   },
@@ -52,28 +52,18 @@ export const quickPeekContent: LandingPageContent = {
     eyebrow: "The real problem",
 
     headline:
-      "Your quick checks should stay quick.",
+      "Every browser check breaks your flow.",
 
     before: {
-      title: "Browser detour",
+      title: "Browser flow",
       body:
-        "Cmd+Tab → open browser → find tab → get distracted by other tabs and notifications.",
-      points: [
-        "Slow startup for tiny tasks",
-        "Tabs/notifications steal attention",
-        "Hard to jump in and out quickly",
-      ],
+        "Cmd+Tab → Chrome → find tab → open → see notifications → 5 minutes gone.",
     },
 
     after: {
       title: "QuickPeek flow",
       body:
-        "Shortcut → check saved site or open temporary popup → close. Done in seconds.",
-      points: [
-        "Global shortcut from anywhere",
-        "Cmd+Shift+V temporary popup with URL/search bar",
-        "Built-in back, forward, reload, and open-in-browser",
-      ],
+        "Shortcut → panel opens → check → close. Back to work in seconds.",
     },
   },
 
@@ -89,12 +79,12 @@ export const quickPeekContent: LandingPageContent = {
         body: "Download and drop into Applications. That’s it.",
       },
       {
-        title: "Set up your sites",
-        body: "Add dashboards, docs, and inboxes. Reorder them and set your startup tab behavior.",
+        title: "Add your tools",
+        body: "Paste links to dashboards, docs, inboxes. Reorder however you think.",
       },
       {
-        title: "Use both quick flows",
-        body: "Use the main panel for saved sites, and Cmd+Shift+V for one-off links or search queries.",
+        title: "Use like muscle memory",
+        body: "Hit a shortcut, jump instantly, get out. No browsing.",
       },
     ],
   },
@@ -106,24 +96,24 @@ export const quickPeekContent: LandingPageContent = {
 
     cards: [
       {
-        title: "Main panel + temporary popup",
+        title: "Instant open",
         description:
-          "Use persistent saved sites in the main panel and a separate temporary popup for ad-hoc browsing.",
+          "Menu bar panel launches in milliseconds. No heavy browser startup.",
       },
       {
-        title: "Keyboard-first controls",
+        title: "State preserved",
         description:
-          "Global toggle, Cmd+1..9 site switching, Cmd+Shift+V popup, plus quick focus and close actions.",
+          "Everything stays exactly where you left it. No reloads, no lost context.",
       },
       {
-        title: "Navigation tools built in",
+        title: "Keyboard-first",
         description:
-          "Temporary popup includes URL/search input, back/forward/reload, loading progress, and open-in-browser.",
+          "Global shortcut + Cmd+1..9 switching. Jump between sites without touching the mouse.",
       },
       {
-        title: "7-day trial + license unlock",
+        title: "Lightweight by design",
         description:
-          "One build for everyone: trial starts on first launch, then activate with Gumroad license key in-app.",
+          "Runs as a minimal native panel, not a full browser. Low memory, no tab bloat.",
       },
     ],
   },
@@ -138,15 +128,14 @@ export const quickPeekContent: LandingPageContent = {
     currency: "USD",
 
     subtitle:
-      "One-time purchase. 7-day in-app trial included before activation.",
+      "If it saves you even 2 minutes a day, it pays for itself fast.",
 
     ctaText: "Get QuickPeek",
 
     features: [
       "Unlimited sites",
       "Global shortcut",
-      "Temporary popup (Cmd+Shift+V)",
-      "License activation in-app",
+      "Session persistence",
       "Lifetime updates",
     ],
   },
@@ -156,11 +145,6 @@ export const quickPeekContent: LandingPageContent = {
     headline: "FAQ",
 
     items: [
-      {
-        q: "Does it include a trial?",
-        a:
-          "Yes. Every install starts with a 7-day trial, and activation happens in-app with your Gumroad license key.",
-      },
       {
         q: "Is this just a browser?",
         a:
@@ -172,8 +156,8 @@ export const quickPeekContent: LandingPageContent = {
           "Because Chrome is built for sessions. QuickPeek is built for checks.",
       },
       {
-        q: "Can I open links that are not in my saved list?",
-        a: "Yes. Use the temporary popup (Cmd+Shift+V), paste a URL or type a search query, and go.",
+        q: "Can I add any site?",
+        a: "Yes. Anything with a URL.",
       },
       {
         q: "Will this slow my system?",
